@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const token = require('./token');
+const token = require('./token/token');
 const random_group = require('./function/random_group')
 
 client.once('ready', () => {
