@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 const token = require('./token/token');
 const random_group = require('./function/random_group')
+const get_r6 = require('./function/r6_get_data')
 
 client.once('ready', () => {
     console.log('Online');
@@ -34,8 +35,18 @@ client.on('message', message => {
       } catch (error) {
         message.channel.send("รูปแบบคำสั่งไม่ถูกต้อง");
       }
-        
-
+    }
+    else if(mg[0] === prefix+'r6'){
+      try {
+        if(mg[1] === '-help'){
+          message.channel.send("รูปแบบคำสั่ง : -r6 ชื่อผู้เล่น platforms");
+        }
+        else{
+          // let answer = r6(mg[1])
+        }
+      } catch (error) {
+        message.channel.send("รูปแบบคำสั่งไม่ถูกต้อง");
+      }
     }
     });
 
