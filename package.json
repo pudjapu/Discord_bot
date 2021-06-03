@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "rainbowsix-siege-api": "^1.0.3",
+    "ubisoft-api": "0.0.1"
   }
 }
