@@ -36,18 +36,7 @@ client.on('message', message => {
         message.channel.send("รูปแบบคำสั่งไม่ถูกต้อง");
       }
     }
-    else if(mg[0] === prefix+'r6'){
-      try {
-        if(mg[1] === '-help'){
-          message.channel.send("รูปแบบคำสั่ง : -r6 ชื่อผู้เล่น platforms");
-        }
-        else{
-          // let answer = r6(mg[1])
-        }
-      } catch (error) {
-        message.channel.send("รูปแบบคำสั่งไม่ถูกต้อง");
-      }
-    }
+    
     });
 
 client.login(token())
