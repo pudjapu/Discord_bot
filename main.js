@@ -3,7 +3,6 @@ const client = new Discord.Client();
 
 const token = require('./token/token');
 const random_group = require('./function/random_group')
-const get_r6 = require('./function/r6_get_data')
 
 client.once('ready', () => {
     console.log('Online');
